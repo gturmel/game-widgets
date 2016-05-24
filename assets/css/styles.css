@@ -1,0 +1,25 @@
+.center, .jumbotron #jumbotron-header, .jumbotron #jumbotron-p {
+  display: flex;
+  justify-content: center; }
+
+.jumbotron {
+  margin-bottom: 0; }
+  .jumbotron #jumbotron-header {
+    font-size: 6em; }
+  .jumbotron #jumbotron-p {
+    font-size: 3em; }
+
+.dice, .risk-players .attacker .attacker-die, .risk-players .defender .defender-die {
+  border: 1px solid black;
+  border-radius: 0.3em;
+  height: 4em;
+  width: 4em; }
+
+.risk-players {
+  margin-left: 3em; }
+  .risk-players .attacker h3 {
+    text-decoration: underline; }
+  .risk-players .defender h3 {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=styles.css.map */

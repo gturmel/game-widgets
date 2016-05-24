@@ -1,0 +1,49 @@
+<!doctype HTML>
+<html data-ng-app="games">
+   <head>
+      <title>Game Widgets</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      <meta charset="UTF-8">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+      <link href="assets/css/styles.css" rel="stylesheet">
+   </head>
+   <body ng-controller="riskController">
+      <header class="jumbotron">
+         <h2 id="jumbotron-header">Board Game Widgets</h2>
+         <p id ="jumbotron-p">Help for gamers since 2016</p>
+      </header>
+      <nav class="navbar navbar-default">
+         <ul class="nav navbar-nav">
+            <li><a href="#">Risk Roller</a></li>
+            <li><a href="#">One Dice Roller</a></li>
+            <li><a href="#">Two Dice Roller</a></li>
+         </ul>
+      </nav>
+      <!-- here's where we'll build out the information that the risk players will both need -->
+      <section class="risk-players">
+         <div class="attacker">
+            <h3>Attacker</h3>
+            <div class="dice">
+               <div class="attacker-die">hi</div>
+
+            </div>
+         </div>
+         <div class="defender">
+            <h3>Defender</h3>
+            <div class="dice">
+               <div class="defender-die">hi</div>
+            </div>
+         </div>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="assets/js/scripts.js" type="text/javascript"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   </body>
+</html>

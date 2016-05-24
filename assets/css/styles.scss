@@ -1,0 +1,57 @@
+// declaring sass variables
+// end of variable declaration
+
+//define mix-ins
+.center {
+   display: flex;
+   justify-content: center;
+}
+//end of mix-ins
+
+
+
+//styling for jumbotron
+.jumbotron {
+   margin-bottom: 0;
+   #jumbotron-header {
+      font-size: 6em;
+      @extend .center;
+   }
+   #jumbotron-p {
+      @extend .center;
+      font-size: 3em;
+   }
+}
+//end styling for jumbotron
+
+//styling for dice
+.dice {
+   border: 1px solid black;
+   border-radius: 0.3em;
+   height: 4em;
+   width: 4em;
+}
+//end styling for dice
+
+//styling for players
+.risk-players {
+   margin-left: 3em;
+   .attacker {
+      h3 {
+         text-decoration: underline;
+      }
+      .attacker-die {
+         @extend .dice;
+      }
+   }
+   .defender {
+      h3 {
+         text-decoration: underline;
+      }
+      .defender-die {
+         @extend .dice;
+
+      }
+   }
+}
+//end styling for players
