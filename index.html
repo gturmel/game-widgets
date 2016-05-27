@@ -27,17 +27,36 @@
       <section class="risk-players">
          <div class="attacker">
             <h3>Attacker</h3>
-            <div class="dice">
-               <div class="attacker-die">hi</div>
-
-            </div>
+            <section class="attacker-components">
+               <div class="dice">
+                  <div class="attacker-die">
+                     <p class="attacker-number">1</p>
+                  </div>
+                  <div class="attacker-die">
+                     <p class="attacker-number">1</p>
+                  </div>
+                  <div class="attacker-die">
+                     <p class="attacker-number">1</p>
+                  </div>
+               </div>
+               <button type="button" class="btn btn-success">Attacker Ready</button>
+            </section>
          </div>
          <div class="defender">
             <h3>Defender</h3>
-            <div class="dice">
-               <div class="defender-die">hi</div>
-            </div>
+            <section class="defender-components">
+               <div class="dice">
+                  <div class="defender-die">
+                     <p class="defender-number">1</p>
+                  </div>
+                  <div class="defender-die">
+                     <p class="defender-number">1</p>
+                  </div>
+               </div>
+               <button type="button" class="btn btn-success">Defender Ready</button>
+            </section>
          </div>
+         <button type="button" class="btn btn-warning">Roll!</button>
       </section>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
