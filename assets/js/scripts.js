@@ -3,6 +3,7 @@ var games = angular.module("games", []);
 games.controller("riskController", ["$scope", function($scope){
    var randomNumber = Math.random();
 
+//rng simulator function (is it truly random?)
    rng = function(){
       if (randomNumber > 0 && randomNumber <= 1/6){
          return 1;
@@ -18,7 +19,9 @@ games.controller("riskController", ["$scope", function($scope){
          return 6;
       };
    };
+//end of rng simulator
 
+//variable declarations for: attacker, defender, and roll button
    var attackerDie = document.getElementsByClassName("attacker-die");
    var defenderDie = document.getElementsByClassName("defender-die");
    var attackerButton = document.getElementsByClassName("attacker-button");
@@ -27,6 +30,8 @@ games.controller("riskController", ["$scope", function($scope){
    var defenderReady = false;
    var attackCounter = 0;
    var defenderCounter = 0;
+   var rollButton = document.getElementsByClassName("roll-button");
+//end of variable declarations
 
    attackerButton[0].addEventListener("click", function(){
       attackerReady = !attackerReady;
@@ -57,5 +62,23 @@ games.controller("riskController", ["$scope", function($scope){
          defenderCounter--;
       }
    });
+
+//function to check if both defender and attacker are ready
+   var readyToRoll = function(){
+      if(attackerReady === true && defenderReady === true){
+         alert('warg');
+      } else if (attackerReady === true && defenderReady === false){
+         alert('defender not ready');
+      } else {
+         alert('attacker not ready');
+      };
+   };
+//end check attacker and defender function
+
+//roll button logic!
+   rollButton[0].addEventListener("click", function(){
+      readyToRoll();
+   })
+//end roll button logic!
 
 }]);
