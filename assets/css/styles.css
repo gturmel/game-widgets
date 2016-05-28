@@ -9,7 +9,7 @@
   .jumbotron #jumbotron-p {
     font-size: 3em; }
 
-.die, .risk-players .attacker .attacker-die, .risk-players .defender .defender-die {
+.die, .risk-players .attacker .attacker-die, .risk-players .defender .defender-die, .attack-unselected, .defender-unselected {
   border: 2px solid black;
   border-radius: 0.2em;
   height: 2em;
@@ -40,5 +40,13 @@
 
 .btn {
   margin-top: 1em; }
+
+.attack-unselected {
+  background-color: #993D3D;
+  cursor: pointer; }
+
+.defender-unselected {
+  background-color: #d3d3d3;
+  cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -85,3 +85,17 @@
    margin-top: 1em;
 }
 //end button
+
+//unselected button styling
+.attack-unselected {
+   @extend .die;
+   background-color: #993D3D;
+   cursor: pointer;
+}
+
+.defender-unselected {
+   @extend .die;
+   background-color: #d3d3d3;
+   cursor: pointer;
+}
+//end unselected button styling

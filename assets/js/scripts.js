@@ -23,7 +23,12 @@ games.controller("riskController", ["$scope", function($scope){
 
 //variable declarations for: attacker, defender, and roll button
    var attackerDie = document.getElementsByClassName("attacker-die");
+   var firstAttackDie = attackerDie[0];
+   var secondAttackDie = attackerDie[1];
+   var thirdAttackDie = attackerDie[2];
    var defenderDie = document.getElementsByClassName("defender-die");
+   var firstDefenderDie = defenderDie[0];
+   var secondDefenderDie = defenderDie[1];
    var attackerButton = document.getElementsByClassName("attacker-button");
    var defenderButton = document.getElementsByClassName("defender-button");
    var attackerReady = false;
@@ -93,5 +98,27 @@ games.controller("riskController", ["$scope", function($scope){
       readyToRoll();
    })
 //end roll button logic!
+
+//dice select logic
+   firstAttackDie.addEventListener("click", function(){
+      
+   });
+
+   secondAttackDie.addEventListener("click", function(){
+
+   });
+
+   thirdAttackDie.addEventListener("click", function(){
+
+   });
+
+   firstDefenderDie.addEventListener("click", function(){
+
+   });
+
+   secondDefenderDie.addEventListener("click", function(){
+
+   });
+//end dice select logic
 
 }]);
