@@ -61,6 +61,8 @@
       .attacker-die {
          @extend .die;
          background-color: red;
+         cursor: pointer;
+
          .attacker-number {
             color: white;
          }
@@ -72,7 +74,7 @@
       }
       .defender-die {
          @extend .die;
-
+         cursor: pointer;
       }
    }
 }

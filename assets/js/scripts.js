@@ -33,6 +33,7 @@ games.controller("riskController", ["$scope", function($scope){
    var rollButton = document.getElementsByClassName("roll-button");
 //end of variable declarations
 
+
    attackerButton[0].addEventListener("click", function(){
       attackerReady = !attackerReady;
       if(attackCounter === 0){
@@ -40,11 +41,17 @@ games.controller("riskController", ["$scope", function($scope){
          attackerButton[0].classList.add("btn-success");
          attackerButton[0].textContent = "Attacker Ready!";
          attackCounter++;
+         if(defenderReady === true){
+            rollButton[0].classList.remove("btn-warning");
+            rollButton[0].classList.add("btn-success");
+         }
       } else {
          attackerButton[0].classList.remove("btn-success");
          attackerButton[0].classList.add("btn-warning");
          attackerButton[0].textContent = "Attacker Ready?";
          attackCounter--;
+         rollButton[0].classList.remove("btn-success");
+         rollButton[0].classList.add("btn-warning");
       }
    });
 
@@ -55,11 +62,17 @@ games.controller("riskController", ["$scope", function($scope){
          defenderButton[0].classList.add("btn-success");
          defenderButton[0].textContent = "Defender Ready!";
          defenderCounter++;
+         if(attackerReady === true){
+            rollButton[0].classList.remove("btn-warning");
+            rollButton[0].classList.add("btn-success");
+         }
       } else {
          defenderButton[0].classList.remove("btn-success");
          defenderButton[0].classList.add("btn-warning");
          defenderButton[0].textContent = "Defender Ready?"
          defenderCounter--;
+         rollButton[0].classList.remove("btn-success");
+         rollButton[0].classList.add("btn-warning");
       }
    });
 

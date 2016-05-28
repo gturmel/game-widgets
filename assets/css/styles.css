@@ -29,11 +29,14 @@
   .risk-players .attacker h3 {
     text-decoration: underline; }
   .risk-players .attacker .attacker-die {
-    background-color: red; }
+    background-color: red;
+    cursor: pointer; }
     .risk-players .attacker .attacker-die .attacker-number {
       color: white; }
   .risk-players .defender h3 {
     text-decoration: underline; }
+  .risk-players .defender .defender-die {
+    cursor: pointer; }
 
 .btn {
   margin-top: 1em; }
